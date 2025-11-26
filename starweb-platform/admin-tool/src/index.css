@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-['Outfit'] bg-gray-50 text-slate-900 antialiased;
+    }
+}
+
+@layer components {
+    .sidebar-link {
+        @apply flex items-center py-3 px-4 mb-1 rounded-lg transition-all duration-200 text-gray-400 hover:bg-gray-800 hover:text-white;
+    }
+
+    .sidebar-link-active {
+        @apply bg-blue-600 text-white shadow-lg shadow-blue-900/50;
+    }
+
+    .btn-action {
+        @apply px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200;
+    }
+}
